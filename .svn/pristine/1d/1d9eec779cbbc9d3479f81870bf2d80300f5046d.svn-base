@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3f0f6"
+    android:orientation="vertical" >
+    
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#2a94c5" >
+
+            <Button
+                android:id="@+id/achievement_display_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/issue_display_button_back" />
+
+            <TextView
+                android:id="@+id/my_achi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="成果"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/achievement_display_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/issue_display_button_edit" />
+        </FrameLayout>
+  <ScrollView
+              android:id="@+id/scrollView1"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+      <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" >      
+      
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/achievement_label_title_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_label_name" />
+
+            <TextView
+                android:id="@+id/achievement_label_publish_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="出版地"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/achievement_publish_area_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_name" />
+
+            <EditText
+                android:id="@+id/achievement_publish_area"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp" >
+
+            <ImageView
+                android:id="@+id/achievement_label_abstract_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:src="@drawable/issue_display_label_depict" />
+            <TextView
+                android:id="@+id/achievement_label_abstract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-7dp"
+                android:padding="15dp"
+                android:text="摘要"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/achievement_abstract_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_discription" />
+
+            <EditText
+                android:id="@+id/achievement_abstract"
+                android:layout_width="230dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="top"
+                android:padding="3dp"
+                android:text=""
+                android:scrollbars="vertical"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/achievement_label_first_author_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_label_name" />
+
+            <TextView
+                android:id="@+id/achievement_label_first_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="第一作者"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/achievement_first_author_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_name" />
+
+            <EditText
+                android:id="@+id/achievement_first_author"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp" >
+
+            <ImageView
+                android:id="@+id/achievement_label_other_author_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:src="@drawable/issue_display_label_depict" />
+            <TextView
+                android:id="@+id/achievement_label_other_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:padding="3dp"
+                android:text="其他作者"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/achievement_other_author_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_discription" />
+
+            <EditText
+                android:id="@+id/achievement_other_author"
+                android:layout_width="230dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="top"
+                android:padding="3dp"
+                android:text=""
+                android:scrollbars="vertical"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp" >
+
+            <Button
+                android:id="@+id/achievement_file_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/achievement_edit_upload"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/achievement_label_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="文件上传"
+                android:textColor="#2a94c5"
+                android:textSize="15sp" />
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp" >
+	        
+            <ImageView
+                android:id="@+id/achievement_file_path_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:src="@drawable/issue_edit_input_name" />				
+		    <EditText
+			    android:id="@+id/achievement_file_path"
+			    android:layout_width="220dp"
+			    android:layout_height="30dp"
+			    android:layout_gravity="center"
+			     android:layout_marginTop="5dp"
+			    android:gravity="left"
+			    android:padding="0dp"
+			    android:text="文件路径："
+			    android:textColor="#2a94c5"
+			    android:background="@null"
+			    android:scrollbars="vertical"
+			    android:textSize="12sp" />
+        </FrameLayout>
+        <com.srcoop.android.activity.view.MyProgressBar
+				android:id="@+id/achi_bar"
+			 	android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:max="100"
+				android:visibility="invisible"
+				android:progressDrawable="@drawable/activity_achievement_file_download_progress_bar"
+				style="?android:attr/progressBarStyleHorizontal"/>
+        
+      </LinearLayout>
+    </ScrollView>    
+</LinearLayout>

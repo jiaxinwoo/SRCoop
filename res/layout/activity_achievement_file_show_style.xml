@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" 
+    android:background="#e3f0f6"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent" 
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp">
+        
+        <ImageView
+        android:id="@+id/file_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_file" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+         android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp">
+        
+        <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="left"
+        android:textColor="#2a94c5"
+        android:textSize="16sp" 
+        android:text="TextView" />
+        
+    </RelativeLayout>
+
+    
+
+</LinearLayout>
+

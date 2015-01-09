@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#e3f0f6" >
+
+    <TextView
+        android:id="@+id/tv_assignment_name"
+        style="@style/assignment_tv_name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_assignment_name" >
+
+        <TextView
+            style="@style/assignment_tv"
+            android:text="@string/assignment_start_time" />
+
+        <TextView
+            android:id="@+id/tv_assignment_start_time"
+            style="@style/assignment_tv" />
+
+        <TextView
+            style="@style/assignment_tv"
+            android:layout_marginLeft="12dp"
+            android:text="@string/assignment_finish_time" />
+
+        <TextView
+            android:id="@+id/tv_assignment_finish_time"
+            style="@style/assignment_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            style="@style/assignment_tv"
+            android:text="@string/assignment_desc" />
+
+        <TextView
+            android:id="@+id/tv_assignment_desc"
+            style="@style/assignment_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/cb_assignment_finish"
+            style="@style/ass_checkbox_styel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tv_assignment_finish"
+            style="@style/assignment_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-5dp"
+            android:text="@string/assignment_notfinish"
+            android:textColor="@color/assignment_unchecked_color"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

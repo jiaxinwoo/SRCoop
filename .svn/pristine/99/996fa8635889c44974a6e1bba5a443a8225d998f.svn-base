@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_image_background"
+    tools:context="com.example.srcoop_jhm.app.RegisterActivity">
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/register_image_statuebar">
+
+            <Button
+                android:id="@+id/register_button_back"
+                android:background="@drawable/back_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="注册"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/register_image_registerboard"
+            >
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/register_button_student"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:textSize="22dp"
+                    android:text="学生"
+                    android:textStyle="bold"
+                    android:textColor="#825a12"
+
+                    android:background="@drawable/register_button_selectedtype"/>
+                <Button
+                    android:id="@+id/register_button_teacher"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:textSize="22dp"
+                    android:text="导师"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/register_button_type"/>
+
+                </RelativeLayout>
+           
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                >
+                <TextView
+                    android:layout_height="35dp"
+                    android:layout_width="70dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="邮箱"
+                    android:background="@drawable/register_image_label"
+                    />
+                <EditText
+                    android:id="@+id/register_edittext_email"
+                    android:layout_height="35dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                                    android:maxLength="20"
+                android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:background="@drawable/register_ediittext_biginput"
+                    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_height="35dp"
+                    android:layout_width="70dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="密码"
+                    android:background="@drawable/register_image_label"
+                    />
+                <EditText
+                    android:id="@+id/register_edittext_password"
+                    android:layout_height="35dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                     android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                                   android:maxLength="20"
+                android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:background="@drawable/register_ediittext_biginput"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_height="35dp"
+                    android:layout_width="70dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="再次输入"
+                    android:background="@drawable/register_image_label"
+                    />
+                <EditText
+                    android:id="@+id/register_edittext_password2"
+                    android:layout_height="35dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                  android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                                  android:maxLength="20"
+                android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:background="@drawable/register_ediittext_biginput"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_button_finish"
+                android:background="@drawable/resigster_button"
+                android:layout_marginTop="10dp"
+                android:layout_height="35dp"
+                android:layout_width="fill_parent"
+                android:textSize="22dp"
+                android:text="完成注册"
+                android:textStyle="bold"
+                android:textColor="#825a12"
+                />
+
+
+       </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

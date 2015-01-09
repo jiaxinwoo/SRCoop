@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f0f6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2a94c5" >
+
+            <Button
+                android:id="@+id/issue_display_back_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/activity_title_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Issue"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/issue_display_edit_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_button" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/issue_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/issue_label_title_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_label_name" />
+
+            <TextView
+                android:id="@+id/issue_label_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="名称："
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/issue_title_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_name" />
+
+            <EditText
+                android:id="@+id/issue_title"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text="数据挖掘课题节水"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp" >
+
+            <ImageView
+                android:id="@+id/issue_label_depict_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:src="@drawable/issue_display_label_depict" />
+
+            <TextView
+                android:id="@+id/issue_label_depict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-7dp"
+                android:padding="10dp"
+                android:text="描述："
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/issue_depict_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_input_discription" />
+
+            <EditText
+                android:id="@+id/issue_depict"
+                android:layout_width="230dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="top"
+                android:padding="3dp"
+                android:text="数据挖掘课题节水数据"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/issue_label_member_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_label_member" />
+
+            <TextView
+                android:id="@+id/issue_label_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="成员："
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/issue_teacher_name_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_text_teacher_name" />
+
+            <TextView
+                android:id="@+id/issue_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-35dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="蔡树彬老师"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/issue_teacher_number_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="82.3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/issue_display_text_teach_number" />
+
+            <TextView
+                android:id="@+id/issue_teacher_number"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="82.3dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="13546895623"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </FrameLayout>
+      
+        <ListView
+            android:id="@+id/memberListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

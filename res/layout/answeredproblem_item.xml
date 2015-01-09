@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+      android:descendantFocusability="blocksDescendants"
+>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/problemslist_image_title"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#1f5a75"
+            android:text="标题:"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/problemslist_textview_title2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:ellipsize
+                ="end"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#1f5a75" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="125dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/problemslist_image_from"
+                android:layout_width="125dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#1f5a75"
+                    android:text="来源:" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#1f5a75"
+                    android:id="@+id/problemslist_textview_from2" />
+            </LinearLayout>
+            
+            <Button
+                android:background="@drawable/problemslist_button_problemdisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"          
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#825a12"
+                android:text="点击查看"           
+		android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/problemslist_image_desciption"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="130dp"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#1f5a75"
+                android:text="描述:" />
+            <TextView
+                android:autoText="false"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:lines="3"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#1f5a75"
+                android:id="@+id/problemslist_textview_desciption2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/problemslist_image_answer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#1f5a75"
+            android:text="答案:" />
+        <TextView
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="4"
+            android:ellipsize="end"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#1f5a75"
+            android:id="@+id/problemslist_textview_answer2" />
+    </LinearLayout>
+</LinearLayout>

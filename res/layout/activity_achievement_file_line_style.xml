@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" 
+    android:background="#e3f0f6"
+    >
+    
+    <ImageView
+           android:id="@+id/file_icon"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:layout_marginTop="3dp"   
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/issue_display_text_student_name" />
+    
+   <TextView
+           android:id="@+id/file_name"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_gravity="left"
+           android:layout_marginTop="8dp"
+           android:layout_marginLeft="100dp"
+
+           android:text="文件名XXX"
+           android:textColor="#2a94c5"
+           android:textSize="16sp" />
+</FrameLayout>
